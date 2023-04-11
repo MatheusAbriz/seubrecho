@@ -1,0 +1,756 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&family=Spartan:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Righteous&display=swap');
+
+/* MENU INICIO*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a:hover{
+    opacity: 0.7;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    background-color: #e6c2bf;
+    height: 10vh;
+    
+}
+
+/*.logo {
+    width: 40%;
+}*/
+
+.mobile-menu{
+    display: none;
+    cursor:pointer;
+    
+}
+
+.nav-list{
+    margin: 0% 5% 0% 0%;
+    list-style: none;
+    display: flex;
+    
+    
+}
+
+.nav-list .icon{
+    display: flex;
+ 
+}
+
+
+.nav-list li{
+    margin-left: 42px;
+    margin-right: 30px;
+    
+}
+
+
+.dropdown-menu{
+border-radius: 5px;
+background-color: #E6C2BF ;
+
+}
+
+.title{
+   width: 90px;
+}
+
+
+
+.nav-list a {
+    text-decoration: none;
+    color: black;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin:8px;
+    
+}
+
+.nav-list button {
+    color:black;
+}
+
+.nav-list i{
+    margin: 20px 0px 0px 18px;
+    display: flex;
+   margin-top: 40%;
+
+}
+
+#usuario{
+    margin-top: 18px;
+    margin-right: 8px;
+    margin-top: 20%;
+}
+
+#carrinho{
+    margin-top: 14px;
+}
+
+
+
+@media (max-width: 999px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+
+    .title{
+        width: 90px;
+        margin-right: 150px;
+     }
+     
+    .nav-list{
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        width: 40vw;
+        height: 90vh;
+        background-color: #e6c2bf;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(115%);
+        transition: transform 0.3s ease-in;
+        z-index: 1;
+    }
+
+    .nav-list .title1{
+        margin-right: 30%;
+        opacity: 0;
+    }
+
+    .nav-list #dropdown{
+        margin-right: 40%;
+        opacity: 0;
+    }
+
+    .nav-list .button-search{
+       display:none;
+
+    }
+
+    .mobile-menu{
+        display: block ;
+        
+    }
+
+    .nav-list .row{
+        display: inline-block;
+    }
+
+
+
+} 
+
+.nav-list.active {
+    transform:translateX(35px);
+
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+
+
+/* MENU FIM */
+/* Define as propriedades a todos os elementos 
+   da página.*/
+
+
+body {
+	/* Cor do elemento */
+	background-color: #FAFBFD;
+
+}
+
+#box{
+background-color: red;
+height: 25%;
+width: 75%;
+}
+
+section {
+	border: 1px solid #FFAFAF;
+	display: flex;
+    justify-content: center;
+
+	background: #FAFBFD;
+
+	/*Gerar espaço ao redor do conteúdo do elemento
+	  30px superior e inferior
+	  5px para a esquerda e direita. */
+	padding: 20px 5px;
+
+	/* Arredonda cantos. */
+	border-radius: 10px;
+
+	
+	margin-top: 10%;
+	margin-left: 25%;
+	/* Tamanho máximo do elemento*/
+	max-width: 70vw;
+
+    width: 45%;
+   
+
+  
+}
+
+
+
+section h1 {
+	padding: 10px 10px;
+	text-align: center;
+    color: #36383a;
+}
+
+fieldset:nth-child(4) {
+	/* Vai alinhar os elementos 
+	   um ao lado do outro. */
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+
+
+.container {
+	/* Tipo de método de posicionamento de um elemento (estático, relativo, fixo, absoluto ou aderente)
+	/* Definido como relative, indica que está posicionado em relação à sua posição normal. 
+	Outro conteúdo não será ajustado para caber em qualquer lacuna deixada pelo elemento.*/
+
+	/* relative - indica que esta posicionado
+	   em relação à sua posição normal. */
+	position: relative;
+
+}
+
+.container input {
+	margin: 10px 10px;
+
+	/* Define a largura do elemento. */
+	width: calc(100% - 10px);
+
+	/* Defina a altura do elementos. */
+	height: 70px;
+
+	/* Remove a borda. */
+	border: none;
+
+	background-color: #ededed;
+	border-radius: 4px;
+	color: #555;
+
+	/* Tamanho da fonte.*/
+	font-size: 18px;
+
+	/* Aumenta a largura do contorno do texto.*/
+	font-weight: 700;
+
+	/* Gera espaço ao redor do conteúdo do elemento
+	   (superior, direito, inferior e esquerdo) */
+	padding: 14px 10px 0 10px;
+
+}
+
+.container label {
+	/* Tranforma o texto deixando todas as letras
+	   em maiúsculo. */
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	color: #9d9d9d;
+
+	/* Posiciona qualquer elemento de acordo com o 
+	   elemento pai, deixando de fazer parte do fluxo 
+	   comum do documento.*/
+	position: absolute;
+	
+	/* Defina a altura entre linha. */
+	line-height: 70px;
+
+	/* Posição vertical que necessita que o elemento 
+	   tenha uma posição determinada. */
+	top: 10px;
+
+	/* Distância da borda esquerda.*/
+	left: 20px;
+
+	/* Impede a seleção de texto.*/
+	user-select: none;
+
+	/* Se o elemento deve agir ou não a
+	   eventos do ponteiro. */
+	pointer-events: none;
+
+	/* Altera os valores das propriedades
+	   suavemente em um tempo determinado.*/
+	transition: 0.5s;
+	
+}
+
+/* ~ - Quando ocorrer o foco no input 
+   altere as propriedades do label. */
+.container input:focus ~ label,
+.container input:valid ~ label {
+	left: 20px;
+	top: -10px;
+	color: #FFAFAF;
+}
+
+#check {
+	width: 50%;
+	text-transform: uppercase;
+	font-size: 14px;
+	display: flex;
+	margin-top: 3%;
+	margin-left: 2.5%;
+	flex-direction: row;
+}
+
+
+
+#check input{
+
+	/* Define a largura do elemento. */
+	width: 25px;
+
+	/* Defina a altura do elementos. */
+	height: 25px;
+
+	/* auto - Centraliza o elemento na horizontal.
+	   0 - Não altera a margem esquerda e direita. */
+
+}
+
+
+
+
+
+#bnt{
+		
+		
+		margin: 40px 0;
+		margin-left: 25%;
+	
+		/* Ocupar metade do fieldset descontando a 
+		   margin de 10px*/
+		width: 50%;
+		height: 50px;
+	
+		background-color: #FFAFAF;
+		color: #fff;
+		font-size: 20px;
+		border:none;
+		border-radius: 5px;
+	
+		/* Muda o ponteiro do mouse.*/
+		cursor: pointer;
+	
+		/* Linear - Mesma velocidade do início ao fim. */
+		transition: .3s linear;
+
+	
+	
+}
+
+#bnt:hover{
+	border: #FFAFAF 1px solid;
+	background-color: white;
+	color: #FFAFAF;
+}
+
+
+
+
+
+
+form a {
+	/* Remove a decoração padrão do elemento
+	   Na tag a "link" remove o traço inferior. */
+	text-decoration: none;
+
+	font-size: 16px;
+	color: rgb(255, 255, 255);
+	font-weight: 500;
+	padding-top: 20px;
+
+	text-transform: uppercase;
+
+	text-align: center;
+
+	/*Exibe o elemento em bloco. 
+	Ele começa em uma nova linha e ocupa toda a largura.*/
+	display: block;
+}
+
+
+
+form a:hover {
+	color: rgb(255, 255, 255);
+}
+
+section img {
+	width: 250px;
+	height: 250px;
+
+	/*auto  - Centraliza horizontalmente 
+	  o elemento em seu conteiner.*/
+	margin: auto 40px;
+}
+
+@media only screen and (max-width: 1080px) {
+	div#parallelogram {
+		height: 690px;
+	}
+
+	section img {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 510px) {
+	div#parallelogram {
+		display: none;
+	}
+
+	section {
+		min-width: 95vw;
+	}
+
+	form {
+		width: 100%;
+	}
+
+}
+
+/* Footer CSS */
+footer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+    background-color: #e6c2bf;
+    margin-top: 10%;
+}	
+
+footer .col{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 20px;
+}
+
+footer .logo{	
+    margin-top: 10px;
+	margin-bottom: 30px;
+    width: 20vw;
+}
+
+footer h4{	
+    margin: 10px;
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+
+footer p{	
+	font-size: 13px;
+	margin: 0 0px 8px 0px;
+}
+
+footer a{	
+    margin: 10px;
+	font-size: 13px;
+	text-decoration: none;
+	color: #222;
+	margin-bottom: 10px;
+}
+
+footer .follow{	
+	margin-top: 20px;
+}
+
+footer .follow i{	
+    margin: 10px;
+	color: #465b52;
+	padding-right: 4px;
+	cursor: pointer;
+}
+
+footer .pay .row img{	
+	border: 1px solid #088178;
+	border-radius: 6px;
+    
+}
+
+footer .pay img{	
+	margin: 10px 10px 15px 0;
+    
+
+}
+
+footer .follow i:hover,
+footer a:hover{	
+	color: #088178;
+}
+
+footer .copyright{	
+	width: 100%;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Step Count*/
+.steps {
+	font-size: 25px;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: right;
+}
+
+/*Field names*/
+.fieldlabels {
+	color: gray;
+	text-align: left;
+}
+
+/*Icon progressbar*/
+#progressbar {
+    margin-top: 120px;
+    margin-bottom: 100px;
+    overflow: hidden;
+    color: lightgrey;
+    margin-left: -5%;
+}
+
+#progressbar .active {
+    color: #FFAFAF;
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+}
+
+/*Icons in the ProgressBar*/
+#progressbar #account:before {
+    font-family: FontAwesome;
+    content: "\f290";
+}
+
+#progressbar #personal:before {
+    font-family: FontAwesome;
+    content: "\f007";
+}
+
+#progressbar #payment:before {
+    font-family: FontAwesome;
+    content: "\f09d";
+}
+
+#progressbar #confirm:before {
+    font-family: FontAwesome;
+    content: "\f00c";
+}
+
+/*Icon ProgressBar before any progress*/
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px;
+}
+
+/*ProgressBar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1;
+}
+
+/*Color number of the step and the connector before it*/
+#progressbar li.active:before, #progressbar li.active:after {
+    background: #FFAFAF;
+}
+
+/*Animated Progress Bar*/
+.progress {
+	height: 20px;
+}
+
+.progress-bar {
+	background-color: #FFAFAF;
+}
+
+/*Fit image in bootstrap div*/
+.fit-image{
+    width: 100%;
+    object-fit: cover;
+}
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+
+    /*stacking fieldsets above each other*/
+    position: relative;
+}
+
+.form-card {
+	text-align: left;
+}
+
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+
+#msform input, #msform textarea {
+    padding: 8px 15px 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    background-color: #ECEFF1;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+#msform input:focus, #msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #FFAFAF;
+    outline-width: 0;
+}
+
+/*Next Buttons*/
+#msform .action-button {
+    width: 100px;
+    background: #FFAFAF;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 0px 10px 5px;
+    float: right;
+}
+
+#msform .action-button:hover, #msform .action-button:focus {
+    background-color: #FFAFAF;
+}
+
+/*Previous Buttons*/
+#msform .action-button-previous {
+    width: 100px;
+    background: #616161;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px 10px 0px;
+    float: right;
+}
+
+#msform .action-button-previous:hover, #msform .action-button-previous:focus {
+    background-color: #000000;
+}
+
+
+
+
+
+h6{
+	margin-left: 2%;
+	margin-bottom: 5%;
+}
+
+
+
+/* Basic styling */
+
+
+  i{
+	margin-left: 2%;
+	color: #FFAFAF;
+	font-size: 20px;
+  }
