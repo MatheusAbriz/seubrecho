@@ -119,6 +119,14 @@ img{
         grid-template-rows: auto;
     }
 
+    .img-logo{
+        max-width: 25%;
+    }
+
+    .img-google, .img-facebook, .img-instagram{
+        max-width: 23%;
+    }
+
     .icones-area{
         margin-bottom: 40px;
     }
@@ -130,12 +138,16 @@ img{
         grid-column-gap: 10%;
     }
 
+    .first-child{
+        width: 100%;
+    }
+
     .informacao-area h1{
-        font-size: 1.35vw;
+        font-size: 1.535vw;
     }
 
     .texto-contato, .texto-sobre, .texto-conta, .texto-formas-pagamento{
-        font-size: 1.2vw;
+        font-size: 1.39vw;
     }
 
     .contato{
@@ -160,10 +172,106 @@ img{
 
 }
 
+
+/*ARRUMANDO O TAMANHO DA FONTE*/
+@media screen and (max-width: 650px) {
+    .texto-contato, .texto-sobre, .texto-conta, .texto-formas-pagamento{
+        font-size: 1.7vw;
+    }
+
+    .informacao-area{
+        grid-column-gap: 7.3%;
+    }
+
+    .informacao-area h1{
+        font-size: 1.94vw;
+    }
+}
+
+@media screen and (max-width: 535px){
+    .informacao-area{
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: unset;
+    }
+
+    .first-child{
+        text-align: center;
+    }
+
+    .informacao-area h1{
+        font-size: 3vw;
+    }
+
+    .texto-contato, .texto-sobre, .texto-conta, .texto-formas-pagamento {
+        font-size: 2.5vw;
+    }
+
+    .contato{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+    }
+
+    .sobre{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .minha-conta{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: unset;
+        grid-column-end: unset;
+    }
+
+    .formas-pagamento{
+        display: flex;
+        justify-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: unset;
+        grid-column-end: unset;
+    }
+}
+
 /*PARA CELULARES MENORES*/
 @media screen and (max-width: 438px){
     .img-visa, .img-mastercard, .img-pix{
         margin-right: 6%;
     }
 }
-    
+
+@media screen and (max-width: 450px){
+    .texto-contato, .texto-sobre, .texto-conta, .texto-formas-pagamento{
+        font-size: 2.8vw;
+    }
+    .informacao-area h1{
+        font-size: 3.3vw;
+    }
+}
+
+
+@media screen and (max-width: 420px){
+    .texto-contato, .texto-sobre, .texto-conta, .texto-formas-pagamento{
+        font-size: 1.7vh;
+    }
+
+    .informacao-area h1{
+        font-size: 2vh;
+    }
+}
+
