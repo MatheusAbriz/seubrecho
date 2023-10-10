@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*IMPORTANDO AS FONTES*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+body,html{
+    background: #F5F5F5;
+}
+.adm-alterarSenha{
+    display: flex;
+}
+
+.img-usuarios{
+    margin-right: 18px;
+}
+
+/*TITULO USUARIOS ADM*/
+.usuarios-adm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 111px;
+}
+
+.titulo-usuarios{
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+/*BARRA VERTICAL*/
+.barra-vertical{
+    width: 120px;
+    height: 101vh;
+    background-color: #E6C2BF;
+}
+
+/*CONTEUDO AREA*/
+.conteudo-area{
+    margin: 0 auto;
+}
+
+/*FORMULARIO*/
+.formulario{
+    display: flex;
+    justify-content: center;
+	-webkit-box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+	margin: 63px auto 164px auto;
+    width: 450px;
+    background: #FFF;
+}
+
+.formulario form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formulario form>*:last-child{
+    align-self: end;
+}
+
+.formulario form input{
+    background-color: #F6F8FA;
+    border: 0.5px solid #A7A7A7;
+    border-radius: 20px;
+    width: 300px;
+    height: 60px;
+}
+
+.input-nova-senha, .input-senha{
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center;
+    background-size: 40px;
+}
+
+.input-senha{
+    background-image: url('../img/img-cadeado.png');
+}
+
+.input-nova-senha{
+    background-image: url('../img/img-nova-senha.png');
+}
+
+.input-nova-senha{
+    margin-top: 67px;
+}
+
+.formulario form input:active{
+    border: 0.5px solid #A7A7A7;
+}
+
+.formulario form input::placeholder{
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    color: #A7A7A7;
+}
+
+.input-senha, .input-nova-senha{
+    padding: 28px 28px 28px 28px;
+}
+
+.form-titulo{
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    line-height: 39px;
+    margin-top: 94px;
+    margin-bottom: 62px;
+}
+
+.botao-submit{
+    margin-top: 50px;
+    margin-bottom: 56px;
+    width: unset !important;
+    height: unset !important;
+    color: #FFF;
+    background: #E6C1BE !important;
+    -webkit-box-shadow: 4px 4px 10px 4px #FFDBD8;
+    box-shadow: 4px 4px 10px 4px #FFDBD8;
+    border-radius: 20px;
+    border: none !important;
+    padding: 20px 63px 20px 63px;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.botao{
+    color: #FFF !important;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+/*RESPONSIVIDADE*/
+@media screen and (max-width: 700px){
+    .barra-vertical{
+        display: none;
+    }
+    
+    .adm-alterarSenha{
+        display: block;
+    }
+
+    .formulario{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .formulario{
+        max-width: 80%;
+    }
+
+    .formulario form input{
+        max-width: 80%;
+    }    
+
+    .input-nova-senha, .input-senha{
+        background-size: 30px;
+    }
+
+    .formulario form input::placeholder{
+        font-size: calc(3vw + 3px);
+    }
+
+    .botao-submit{
+        padding: 15px 58px 15px 58px;
+    }
+
+    .titulo-usuarios, .form-titulo{
+        font-size: 7vw;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .formulario form input{
+        max-width: 80%;
+    }
+
+    .formulario form input{
+        width: 75vw;
+        height: 7vh;
+    }
+
+    .form-titulo{
+        font-size: 10vw;
+    }
+
+    .botao-submit{
+        padding: 5% 19% 5% 19%;
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .usuarios-adm{
+        flex-direction: column-reverse;    
+    }
+
+    .img-usuarios{
+        margin-right: unset;
+    }
+}
+
+@media screen and (max-width: 270px){
+    .titulo-usuarios{
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 220px){
+    .formulario form>*:last-child{
+        align-self: center;
+    }
+
+    .titulo-usuarios{
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    .input-senha, .input-nova-senha{
+        padding: 8%;
+    }
+}
