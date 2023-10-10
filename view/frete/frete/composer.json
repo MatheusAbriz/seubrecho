@@ -1,0 +1,9 @@
+{
+ "name":"wdev/correios",
+ "autoload":{
+    "psr-4":{
+    "app\\":"app/"
+
+ }
+}
+}
