@@ -1,0 +1,750 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&family=Spartan:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Righteous&display=swap');
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* MENU */
+
+header{
+    background-color: #e6c2bf;  
+   
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    
+}
+
+.nav-bar .btn{  
+    background-color: transparent;
+    border: none;
+    color: black;
+    text-decoration: none;
+    font-size: 1.15rem;
+    
+}
+
+.nav-item #button-home:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .nav-item #button-home:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+.nav-item button:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+.nav-item button:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 250px;
+    min-width:200px;
+    max-width: 300px;
+
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.nav-item {
+    margin: 0 15px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.icons {
+    display: flex;
+    justify-content:center;
+    margin: auto 0px;
+}
+
+.icon{
+    max-width: 30px;
+    min-width: 30px;
+}
+
+#img-profile-user, #img-shopping-bag{
+margin-right: 3rem;
+cursor: pointer;
+}
+
+.icons i.fa{
+    width: 100px;
+}
+
+.icons a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.mobile-menu-icon{
+    display: none;
+    margin-top: 7px;
+}
+
+.mobile-menu-icon .icon{
+    min-width:30px;
+}
+#container5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+#sacola1{
+  width: 80px;
+  height: 80px;;
+  border-radius: 50%;
+  border: solid 1px #FFAFAF;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  margin-right: 5.25rem;
+}
+#sacola2{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: solid 1px #FFAFAF;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  margin-right: 5.25rem;
+}
+#sacola3{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: solid 1px #FFAFAF;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  margin-right: 5.25rem;
+}
+#sacola4{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: solid 1px #FFAFAF;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+
+
+/* Define as propriedades a todos os elementos 
+   da página.*/
+
+
+body {
+	/* Cor do elemento */
+	background-color: #FAFBFD;
+
+}
+
+#box{
+background-color: red;
+height: 25%;
+width: 75%;
+}
+
+.form-body {
+	display: flex;
+    justify-content: center;
+	/* EXEMPLO BOX-SHADOW DE TODOS OS LADOS
+	-webikit-box-shadiow: 0 0 5px #000;
+	box-shadow: 0 0 5px #000;
+	*/
+	-webkit-box-shadow: 0 0 10px #999;
+    box-shadow: 0 0 10px #999;
+	background: #FAFBFD;
+	/*Gerar espaço ao redor do conteúdo do elemento
+	  30px superior e inferior
+	  5px para a esquerda e direita. */
+	padding: 20px 5px;
+	/* Arredonda cantos. */
+	border-radius: 10px;
+	margin: 160px auto;
+	/* Tamanho máximo do elemento*/
+	max-width: 70vw;
+    width: 430px;
+   
+
+  
+}
+
+.icon1, .icon2{
+    position: absolute;
+    top: 40%;
+    right: 8%;
+    z-index: 10;
+    border: none;
+    background: transparent;
+    outline: none;
+	cursor: pointer;
+}
+
+.form-body h1 {
+	padding: 10px 10px;
+	text-align: center;
+    color: #36383a;
+}
+
+fieldset{
+	/* Remove a borda. */
+	border:none;
+}
+
+fieldset:nth-child(3) {
+	/* Vai alinhar os elementos 
+	   um ao lado do outro. */
+	display: flex;
+}
+
+fieldset:nth-child(4) {
+	display: flex;
+
+	/* Adiciona margem na parte superior. */
+}
+
+fieldset:nth-child(5) {
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+	padding: 0px 10px;
+}
+
+fieldset:nth-child(6) {
+	/* Vai alinhar os elementos 
+	   um ao lado do outro. */
+	display: flex;
+}
+
+
+
+.container {
+	/* Tipo de método de posicionamento de um elemento (estático, relativo, fixo, absoluto ou aderente)
+	/* Definido como relative, indica que está posicionado em relação à sua posição normal. 
+	Outro conteúdo não será ajustado para caber em qualquer lacuna deixada pelo elemento.*/
+
+	/* relative - indica que esta posicionado
+	   em relação à sua posição normal. */
+	position: relative;
+}
+
+.container input {
+	margin: 10px 10px;
+
+	/* Define a largura do elemento. */
+	width: calc(100% - 10px);
+
+	/* Defina a altura do elementos. */
+	height: 60px;
+
+	/* Remove a borda. */
+	border: none;
+
+	background-color: #ededed;
+	border-radius: 4px;
+	color: #555;
+
+	/* Aumenta a largura do contorno do texto.*/
+	font-weight: 700;
+
+	/* Gera espaço ao redor do conteúdo do elemento
+	   (superior, direito, inferior e esquerdo) */
+	padding: 14px 10px 0 10px;
+}
+
+.container label {
+	/* Tranforma o texto deixando todas as letras
+	   em maiúsculo. */
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	color: #9d9d9d;
+	
+
+	/* Posiciona qualquer elemento de acordo com o 
+	   elemento pai, deixando de fazer parte do fluxo 
+	   comum do documento.*/
+	position: absolute;
+	
+	/* Defina a altura entre linha. */
+	line-height: 70px;
+
+	/* Posição vertical que necessita que o elemento 
+	   tenha uma posição determinada. */
+	top: 10px;
+
+	/* Distância da borda esquerda.*/
+	left: 20px;
+
+	/* Impede a seleção de texto.*/
+	user-select: none;
+
+	/* Se o elemento deve agir ou não a
+	   eventos do ponteiro. */
+	pointer-events: none;
+
+	/* Altera os valores das propriedades
+	   suavemente em um tempo determinado.*/
+	transition: 0.5s;
+	
+}
+
+/* ~ - Quando ocorrer o foco no input 
+   altere as propriedades do label. */
+.container input:focus ~ label,
+.container input:valid ~ label {
+	left: 20px;
+	top: -10px;
+	color: #FFAFAF;
+}
+#input:focus ~ label,
+#input:valid ~ label{
+	left: 20px;
+	top: -10px;
+	color: #FFAFAF;
+}
+#check {
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 14px;
+	display: flex;
+	margin-left: 1.25rem;
+	margin-top: 1.2rem;
+}
+.botao-centralizado{
+	width: 100%;
+}
+#check input{
+
+	/* Define a largura do elemento. */
+	width: 25px;
+
+	/* Defina a altura do elementos. */
+	height: 25px;
+
+	/* auto - Centraliza o elemento na horizontal.
+	   0 - Não altera a margem esquerda e direita. */
+	margin: auto 0;
+
+	/* Gera espaço ao redor do conteúdo do elemento
+	   (superior, direito, inferior e esquerdo) */
+	/*padding: 14px 60px 0 10px;*/
+}
+.form-titulo{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+#check label {
+
+	margin: auto 10px;
+
+	color: #555;
+	transition: 0.5s
+}
+
+#check input:checked ~ label,
+#check input:valid ~ label {
+	color: #FFAFAF;
+	cursor: pointer;
+}
+
+	.botao-submit {
+		/*auto  - Centraliza horizontalmente 
+		o elemento em seu conteiner.*/ 
+		margin-top: 30px;
+		/* Ocupar metade do fieldset descontando a 
+		margin de 10px*/
+		/*width: calc(50% - 10px);*/
+		width: 70%;
+		height: 60px;
+		margin-bottom: 1rem;
+		background-color: #FFAFAF;
+		color: #fff;
+		font-size: 20px;
+		border:none;
+		border-radius: 20px;
+
+		/* Muda o ponteiro do mouse.*/
+		cursor: pointer;
+
+		/* Linear - Mesma velocidade do início ao fim. */
+		transition: .3s linear;
+
+	}
+	#ntc{
+		color: #FFAFAF;
+		text-decoration: none ;
+	}
+	.botao-submit:hover {
+		/* Altera a transparência do elemento. */
+		opacity: 0.85;
+		background-color: #c38a84;
+	}
+
+
+.botao{
+		/* Remove a decoração padrão do elemento
+	   Na tag a "link" remove o traço inferior. */
+	   text-decoration: none;
+	   font-size: 16px;
+	   color: rgb(255, 255, 255);
+	   font-weight: 500;
+	   text-transform: uppercase;
+	   text-align: center;
+	   /*Exibe o elemento em bloco. 
+	   Ele começa em uma nova linha e ocupa toda a largura.*/
+	   display: block;
+}
+ul,ol{
+	padding-left: 0rem;
+}
+.termos-uso{
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: 500;
+	color: #FFAFAF;
+	text-transform: uppercase;
+	/*Exibe o elemento em bloco. 
+	Ele começa em uma nova linha e ocupa toda a largura.*/
+	display: block;
+	margin-bottom: 2.25rem;
+	margin-top: 0.8rem;
+}
+.termos-uso:hover{
+	color: 	#c38a84;
+}
+.botao:hover {
+	color: rgb(255, 255, 255);
+}
+
+.form-body img {
+	width: 250px;
+	height: 250px;
+
+	/*auto  - Centraliza horizontalmente 
+	  o elemento em seu conteiner.*/
+	margin: auto 40px;
+}
+.campo{
+	padding-left: 1.25rem;
+}
+
+
+
+
+/*REPONSVIDADE*/
+
+@media screen and (max-width:540px){
+    .nav-bar{
+        display: block;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+        width: 280px;
+        margin: 0 auto;
+        min-width:200px;
+        max-width: 300px;
+    
+    }
+
+    .icons {
+        display: flex;
+        align-items:center;
+        padding: 0rem 4rem;
+    }
+
+    .mobile-menu .nav-item #btn-home{
+        margin-left: 14px;
+        color: black;
+    }
+
+    .mobile-menu .nav-item #btn-home a{
+        color: black;
+    }
+
+    #product1 .pro{
+        width: 20%;
+        min-width: 250px;
+        padding: 10px 12px;
+        border: 0px solid #e6c2bf;
+        border-radius: 2%;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0, 0.02);
+        margin: 15px 0;
+        transition: 0.2s ease;
+        position: relative;
+        border: 1px solid #e6c2bf;
+        
+    }
+    html{
+        min-width: fit-content;
+    }
+    
+}
+@media screen and (max-width:1008px){
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item .btn-home:before {
+        content: none;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: red;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+      }
+    
+      .nav-item .btn-home:hover:before {
+        visibility:hidden;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+      }
+    
+    .nav-item .btn:before {
+        content: none;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: #000;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+      }
+    
+    .nav-item .btn:hover:before {
+        visibility:hidden;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+      }
+
+   .mobile-menu .icons{
+    max-width: 0.5px;
+   }
+
+    .btn:not(:disabled):not(.disabled){
+        background-color: transparent;
+    }
+
+    .nav-item{
+        display: none;
+
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+        margin: 0px auto;
+        width: 114px;
+    } 
+
+    .mobile-menu .nav-item #btn-home{
+        margin-left: 14px;
+        color: black;
+    }
+
+    .mobile-menu .nav-item #btn-home a{
+        color: black;
+    }
+
+    .open{
+        display: block;
+    }
+}
+
+.nav-list.active {
+    transform:translateX(35px);
+
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+@media (min-width: 1199.98px) and (max-width: 1200px){
+	.form-body{
+		max-width: 70vw;
+	}
+}
+@media (max-width: 1080px) {
+	div#parallelogram {
+		height: 690px;
+	}
+
+	.form-body img {
+		display: none;
+	}
+}
+/* IPAD AIR */
+@media (max-width: 1180px) and (min-width: 820px){
+	.form-body{
+		width: auto;
+	}
+}
+/* IPAD MINI */
+@media (max-width: 1024px) and (min-width: 768px){
+	.form-body{
+		width: auto;
+	}
+}
+@media  (max-width: 510px) {
+	div#parallelogram {
+		display: none;
+	}
+
+	.form-body {
+		min-width: 90vw;
+	}
+	.container label{
+        font-size: 14px;
+	}
+    #sacola1, #sacola2, #sacola3{
+        margin-right: 0;
+    }
+    #sacola1, #sacola2, #sacola3, #sacola4{
+        width: 70px;
+        height: 70px;
+    }
+	form {
+		width: 100%;
+	}
+
+	fieldset:nth-child(2),
+	fieldset:nth-child(4),
+	fieldset:nth-child(5) {
+		flex-direction: column;
+	}
+
+	fieldset:nth-child(4) {
+		padding: 0px;
+	}
+
+	div#check {
+		width: 100%;
+	}
+}
+@media (max-width: 720px) and (min-width: 540px){
+	.form-body{
+		width: auto;
+	}
+    #sacola1, #sacola2, #sacola3{
+        margin-right: 1rem;
+    }
+    .container label{
+        font-size: 10px;
+    }
+    #check{
+        width: 70%;
+    }
+	
+}
+
+@media (max-width: 653px) and (min-width: 280px){
+    #sacola1, #sacola2, #sacola3, #sacola4{
+        width: 50px;
+        height: 50px;
+    }
+    .container label{
+        font-size: 12px;
+    }
+}
+
+
+
+

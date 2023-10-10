@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jomhuria&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nossaCauDiv h1{
+    font-family: 'Jomhuria', cursive !important;
+    font-size: 60px;
+    letter-spacing: 3px;
+    margin-top: 15px;
+}
+
+.conConsDiv h1{
+    font-family: 'Jomhuria', cursive !important;
+    font-size: 60px;
+    letter-spacing: 3px;
+    margin-top: 15px; 
+}
+
+.articleVantagens h1, h2{
+    font-family: 'Jomhuria', cursive !important;
+    font-size: 60px;
+    letter-spacing: 3px;
+    margin-top: 15px; 
+}
+
+main p{
+    font-family: 'Inter', sans-serif;
+
+}
+
+
+.nossaCauDiv{
+    display:flex;
+    margin-top: 120px;
+    justify-content: center;
+
+}
+
+.nossaCauDiv img{
+    width: 310px;
+    margin: auto;
+}
+
+.nossaCauDiv aside{
+    display: flex;
+}
+
+.nossaCauDiv article{
+    width: 545px;
+    margin-left: 115px;
+
+    margin-right: 20px;
+    
+}
+
+.nossaCauDiv h1{
+    text-align:center;
+}
+
+.nossaCauDiv p{
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.conConsDiv{
+    display:flex;
+    margin-top: 150px;
+    justify-content: center;
+
+}
+
+.conConsDiv img{
+    width: 190px;
+    margin-top: 115px;
+    margin-right: 20px;
+    margin-left: 115px;
+}
+
+.conConsDiv article{
+    width: 545px;
+    margin-left: 115px;
+    margin-right: 20px;
+    
+}
+
+.conConsDiv h1{
+    text-align:center;
+}
+
+.conConsDiv p{
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.articleVantagens{
+    margin: 150px 0px;
+}
+
+.articleVantagens section{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 65px auto;
+}
+
+
+.articleVantagens h1{
+    text-align: center;
+}
+
+.articleVantagens p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.articleVantagens figure{
+    background-color: #E6C2BF;
+    width: 208px;
+    border-radius: 100%;
+    padding: 30px;
+    margin: auto;
+}
+
+div h2{
+    text-align: center;
+    width: 212px;
+}
+
+.asideRespCons{
+    display: none;
+}
+
+@media (min-width:450px){
+    .articleVantagens section div:nth-child(2){
+        margin: 0px 25px;
+    }
+}
+
+
+
+@media (max-width: 750px) {
+    .articleVantagens section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px auto;
+    }
+
+    .nossaCauDiv article{
+        margin: 60px auto;
+    }
+
+    .asideRespCons{
+        display: unset;
+    }
+
+    .asideCons{
+        display: none ;
+    }
+    
+    .nossaCauDiv{
+        flex-direction: column;
+    }
+
+    .conConsDiv{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .asideRespCons figure{
+        display: flex;
+    }
+
+    .conConsDiv img{
+        margin: auto;
+    }
+
+    .conConsDiv article{
+        margin: 60px auto;
+    }
+
+    .nossaCauDiv {
+        margin-top: 0px;
+    }
+
+    .articleVantagens{
+        align-items: center;    
+        margin-top: 110px;
+    }
+
+    .articleVantagens div{
+        margin-top: 50px;
+    }
+
+    div h2{
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 570px) {
+    .conConsDiv article{
+        width: unset;
+    }
+
+    .nossaCauDiv img{
+        width: 183px;
+    }
+
+    .nossaCauDiv article{
+        width: unset;
+    }
+
+    .nossaCauDiv p{
+        margin: 50px;
+    }
+
+    .conConsDiv p{
+        margin: 50px;
+    }
+
+    .articleVantagens figure{
+        width: 138px;
+        margin: auto;
+    }
+
+    #consumoConscienteC img{
+        width: 80px;
+    }
+    
+    #roupasQualidadeC img{
+        width: 80px;
+    }
+
+    #economiaC img{
+        width: 80px;
+    }
+
+    .asideRespCons figure img{
+        width: 180px;
+    }
+
+    h1, h2{
+        font-size: 45px;
+    }
+}
